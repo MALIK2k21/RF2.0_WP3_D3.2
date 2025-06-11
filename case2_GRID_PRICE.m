@@ -1,4 +1,4 @@
-function Total_grid_price = MAXIV_GRID_PRICE(total_power)
+function Total_grid_price = case2_GRID_PRICE(total_power)
 
 
 Yearly_total_energy_consumption=total_power*1;
