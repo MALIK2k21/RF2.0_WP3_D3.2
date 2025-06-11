@@ -941,14 +941,14 @@ peak_load = max(results.P_net_noGrid);
 total_grid_energy = sum(results.LSBG);
 
 switch upper(config.facility)
-    case 'KARA'
-        grid_price = KARA_GRID_PRICE(annual_net_load, peak_load, config.do_PLC);
+    case 'case1'
+        grid_price = case1_GRID_PRICE(annual_net_load, peak_load, config.do_PLC);
         grid_costs = EURO_TO_USD * grid_price * total_grid_energy;
-    case 'ALBA'
-        grid_price = ALBA_GRID_PRICE(total_grid_energy);
+    case 'case3'
+        grid_price = case3_GRID_PRICE(total_grid_energy);
         grid_costs = EURO_TO_USD * grid_price ;
-    case 'MAXIV'
-        grid_price = MAXIV_GRID_PRICE(total_grid_energy);
+    case 'case2'
+        grid_price = case2_GRID_PRICE(total_grid_energy);
         grid_costs = EURO_TO_USD * grid_price ;
     otherwise
         error('Unknown facility: %s', config.facility);
