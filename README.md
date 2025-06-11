@@ -13,7 +13,6 @@ The replication of results presented in the associated Report D3.2 would be diff
 
 - The stochastic nature of genetic algorithm.
 - The synthetic cost data of grid tariffs as actual tariffs can not be disclosed.
-- The load demand curve is generted by randomnumbers as at the moment sharing the actual data is not feasible.
 
 ## Contact Info
 muhammad.malik@kit.edu
